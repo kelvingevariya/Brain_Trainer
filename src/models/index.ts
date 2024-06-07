@@ -1,0 +1,5 @@
+export * as RedisModel from './redis.model'
+export * as UsersModel from './users.model'
+export * as GamesModel from './games.model'
+export * as UserGamesHistoryModel from './user-games-history.model'
+export * as UserTodayGamesModel from './user-today-games.model'

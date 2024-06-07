@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "checkJs": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

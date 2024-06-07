@@ -1,0 +1,210 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Go Squire API",
+    "description": "Description",
+    "version": "1.0.0"
+  },
+  "host": "http://localhost:3020",
+  "basePath": "/api/v1",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/users/": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "any"
+                },
+                "os": {
+                  "example": "any"
+                },
+                "os_version": {
+                  "example": "any"
+                },
+                "device": {
+                  "example": "any"
+                },
+                "app_version": {
+                  "example": "any"
+                },
+                "source": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/verify": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "any"
+                },
+                "token": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "any"
+                },
+                "os": {
+                  "example": "any"
+                },
+                "os_version": {
+                  "example": "any"
+                },
+                "device": {
+                  "example": "any"
+                },
+                "app_version": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/{id}/verify/{verificationId}": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "verificationId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/games/today-games": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/games/skilled-games": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/games/create-game-history": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "gameId": {
+                  "example": "any"
+                },
+                "isCompleted": {
+                  "example": "any"
+                },
+                "level": {
+                  "example": "any"
+                },
+                "movesInParallel": {
+                  "example": "any"
+                },
+                "obstaclePenalties": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
